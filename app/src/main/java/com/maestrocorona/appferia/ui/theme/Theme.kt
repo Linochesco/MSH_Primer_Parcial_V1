@@ -1,6 +1,5 @@
 package com.maestrocorona.appferia.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -49,10 +48,10 @@ fun AppFeriaTheme(
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
-
+//MOdificado
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = Typography,  // Aquí debe coincidir con la variable definida en Typography.kt
         content = content
     )
 }
