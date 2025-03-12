@@ -7,7 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
+    //Le agregue los colores de las instrucciones del tema Purple40/Purple80
     <color name="Purple40">#FF6650A4</color>
     <color name="Purple80">#FFD0BCFF</color>
 </resources>

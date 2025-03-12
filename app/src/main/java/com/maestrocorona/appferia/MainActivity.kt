@@ -13,11 +13,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import android.content.Intent
+
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.maestrocorona.appferia.ui.theme.AppFeriaTheme
+import com.maestrocorona.appferia.ui.theme.Purple40
 import com.maestrocorona.appferia.ui.theme.Purple80
 
 
@@ -54,7 +56,7 @@ fun MainScreen(onNavigateToSecondActivity: () -> Unit) {
             BusinessItem("Negocios de la Nave 1")
             BusinessItem("Negocios de la Nave 2")
             BusinessItem("Negocios de la Nave 3")
-            BusinessItem("Negocios de la Nave 4")
+            BusinessItem("Atracciones y conciertos 4")
 
 
             // Botón para navegar a la segunda actividad
@@ -75,6 +77,7 @@ fun BusinessItem(text: String) {
         modifier = Modifier
             .fillMaxWidth()
             .height(120.dp),
+        //Le agregue el color de la nave a la CARD de negocio
         colors = CardDefaults.cardColors(Purple80)
     ) {
         Row(
@@ -96,7 +99,9 @@ fun BusinessItem(text: String) {
                 text = text,
                 style = TextStyle(
                     fontFamily = FontFamily.SansSerif,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    //Le agregue el color de la nave a la letra
+                    color = Purple40
                 ),
                 modifier = Modifier.padding(8.dp)
             )

@@ -37,7 +37,7 @@ fun SecondScreen(onBackPressed: () -> Unit) {
             Text("Restaurante 1")
             Text("Restaurante 2")
             Text("Restaurante 3")
-            Text("Restaurante 4")
+            Text("Atracciones y conciertos 4")
             
             // Botón para volver
             Button(
