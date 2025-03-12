@@ -14,13 +14,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import android.content.Intent
 
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
-import com.maestrocorona.appferia.ui.theme.AppFeriaTheme
-import com.maestrocorona.appferia.ui.theme.Purple40
-import com.maestrocorona.appferia.ui.theme.Purple80
+import androidx.compose.ui.text.TextStyle // Define el estilo del texto, incluyendo fuente, tamaño y color.
+import androidx.compose.ui.text.font.FontFamily // Permite establecer la familia tipográfica, como SansSerif.
+import androidx.compose.ui.text.font.FontWeight // Controla el grosor de la fuente (Bold, Light, etc.).
+import androidx.compose.ui.tooling.preview.Preview // Habilita la vista previa en Android Studio para Composables.
+
+import com.maestrocorona.appferia.ui.theme.AppFeriaTheme // Importa el tema personalizado de la app.
+import com.maestrocorona.appferia.ui.theme.Purple40 // Color definido en la paleta de colores de la app.
+import com.maestrocorona.appferia.ui.theme.Purple80 // Otro color definido en la paleta de la app.
 
 
 class MainActivity : ComponentActivity() {
@@ -77,7 +78,7 @@ fun BusinessItem(text: String) {
         modifier = Modifier
             .fillMaxWidth()
             .height(120.dp),
-        //Le agregue el color de la nave a la CARD de negocio
+        //🔹Le agregue el color de la nave a la CARD de negocio
         colors = CardDefaults.cardColors(Purple80)
     ) {
         Row(
@@ -94,13 +95,13 @@ fun BusinessItem(text: String) {
                     .size(100.dp)
                     .padding(8.dp)
             )
-            // Texto del negocio dentro de la imagen, negocio de la nave
+            // 🔹 Texto del negocio dentro de la imagen, negocio de la nave
             Text(
                 text = text,
                 style = TextStyle(
                     fontFamily = FontFamily.SansSerif,
                     fontWeight = FontWeight.Bold,
-                    //Le agregue el color de la nave a la letra
+                    //🔹 Le agregue el color de la nave a la letra
                     color = Purple40
                 ),
                 modifier = Modifier.padding(8.dp)
